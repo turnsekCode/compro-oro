@@ -5,7 +5,6 @@ import FacebookIcon from "@mui/icons-material/Facebook";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
-import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
 
 const FooterMobil = () => {
   const [menuAbierto, setMenuAbierto] = useState(null);
@@ -14,7 +13,12 @@ const FooterMobil = () => {
   return (
     <footer className={styles.footer}>
       <figure>
-        <a href="https://quickgold.es/" title="texto" rel="noopener noreferrer">
+        <a
+          href="https://quickgold.es/"
+          style={{ marginBottom: "14px" }}
+          title="texto"
+          rel="noopener noreferrer"
+        >
           <img
             loading="lazy"
             src="https://quickgold.es/logo.png"
@@ -26,7 +30,7 @@ const FooterMobil = () => {
         </a>
       </figure>
       <div className={styles.contenedorRedes}>
-        <a className={styles.telefono} href="tel:">
+        <a className={styles.telefono} href="tel:900 373 629">
           900 373 629
         </a>
         <div className={styles.redes}>
@@ -59,7 +63,20 @@ const FooterMobil = () => {
             <TwitterIcon />
           </a>
         </div>
-        <p>dossier Franquicia</p>
+        <a
+          title="política de privacidad"
+          href="https://quickgold.es/politica-de-privacidad"
+        >
+          <p>política de privacidad</p>
+        </a>
+        <br></br>
+        <a
+          title="política de calidad"
+          href="https://quickgold.es/politica-de-calidad"
+        >
+          <p>política de calidad</p>
+        </a>
+        {/*<p>dossier Franquicia</p>*/}
       </div>
       <div className={styles.contenedorMenuFooter}>
         <div
@@ -82,16 +99,13 @@ const FooterMobil = () => {
             }
           >
             <li>
-              <a
-                href="https://quickgold.es/compro-oro/"
-                title="Ir a compro oro"
-              >
+              <a href="https://quickgold.es/compro-oro" title="Ir a compro oro">
                 Compra de oro
               </a>
             </li>
             <li>
               <a
-                href="https://quickgold.es/cambio-divisas/"
+                href="https://quickgold.es/cambio-divisas"
                 title="Ir a cambiar divisa"
               >
                 Cambio divisas
@@ -99,7 +113,7 @@ const FooterMobil = () => {
             </li>
             <li>
               <a
-                href="https://quickgold.es/compro-plata/"
+                href="https://quickgold.es/compro-plata"
                 title="Ir a compro plata"
               >
                 Compro plata
@@ -107,7 +121,7 @@ const FooterMobil = () => {
             </li>
             <li>
               <a
-                href="https://quickgold.es/vender-diamantes/"
+                href="https://quickgold.es/vender-diamantes"
                 title="Ir a compra diamantes"
               >
                 Compra de diamantes
@@ -115,7 +129,7 @@ const FooterMobil = () => {
             </li>
             <li>
               <a
-                href="https://quickgold.es/invertir-en-oro/"
+                href="https://quickgold.es/invertir-en-oro"
                 title="Ir a oro de inversión"
               >
                 Oro de inversion
@@ -145,43 +159,43 @@ const FooterMobil = () => {
           >
             <li>
               <a
-                href="https://quickgold.es/expansion/"
+                href="https://quickgold.es/expansion"
                 title="Ir a conoce quickgold"
               >
                 Conoce Quickgold
               </a>
             </li>
-            <li>
+            {/*<li>
               <a
-                href="https://quickgold.es/preguntas-frecuentes/"
+                href="https://quickgold.es/preguntas-frecuentes"
                 title="Ir a preguntas frecuentes"
               >
                 Preguntas frecuentes
               </a>
-            </li>
+          </li>*/}
             <li>
               <a
-                href="https://quickgold.es/tiendas/"
+                href="https://quickgold.es/tiendas"
                 title="Ir a localizador de tiendas"
               >
                 Localizador de tiendas
               </a>
             </li>
             <li>
-              <a href="https://quickgold.es/" title="Ir a mapa del sitio">
+              <a href="https://quickgold.es" title="Ir a mapa del sitio">
                 Mapa del sitio
               </a>
             </li>
-            <li>
-              <a href="https://quickgold.es/contacto/" title="Ir a contacto">
+            {/* <li>
+              <a href="https://quickgold.es/contacto" title="Ir a contacto">
                 Contacto
               </a>
-            </li>
-            <li>
+        </li>*/}
+            {/* <li>
               <a href="https://quickgold.es/blog/" title="Ir a blog">
                 Blog
               </a>
-            </li>
+          </li>*/}
           </ul>
         </div>
         <div
@@ -205,20 +219,20 @@ const FooterMobil = () => {
           >
             <li>
               <a
-                href="https://quickgold.es/expansion/"
+                href="https://quickgold.es/expansion"
                 title="Ir abrir tienda quickgold"
               >
                 Abrir una tienda Quickgold
               </a>
             </li>
-            <li>
+            {/*<li>
               <a href="/" title="Dossier">
                 Dossier Franquicia
               </a>
-            </li>
+          </li>*/}
             <li>
               <a
-                href="https://quickgold.es/trabaja-con-nosotros/"
+                href="https://quickgold.es/trabaja-con-nosotros"
                 title="Ir a trabaja con nosotros"
               >
                 Trabaja con nosotros

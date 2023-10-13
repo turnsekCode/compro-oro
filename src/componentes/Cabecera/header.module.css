@@ -22,11 +22,29 @@
     cursor: pointer;
     margin-bottom: 4px;
 }
+.css-1160xiw-MuiPaper-root-MuiDrawer-paper{
+    width: 80%!important;
+}
 .contenedorRedes {
     display: none;
 }
 
-@media (min-width: 1191px) {
+.closeBoton {
+    display: flex;
+    justify-content: flex-end;
+    cursor: pointer;
+    background: #036F9A;
+    z-index: 20;
+    width: 100%;
+    padding: 10px 0px;
+}
+
+.closeBoton svg {
+    font-size: 43px;
+    color: #FFFFFF;
+}
+
+@media (min-width: 610px) {
     .header {
             background: #036F9A;
             position: absolute;

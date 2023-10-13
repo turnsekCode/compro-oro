@@ -1,29 +1,31 @@
-import React, { useState } from "react";
+import React from "react";
 import styles from "./header.module.css";
-//import Image from "next/image";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import InstagramIcon from "@mui/icons-material/Instagram";
-import useScreenSize from "@/utilities/useScreenSize";
 import MenuOrdenador from "../MenuOrdenador/MenuOrdenador";
 import MenuMobil from "../MenuMobil/MenuMobil";
 import MenuIcon from "@mui/icons-material/Menu";
+import SwipeableDrawer from "@mui/material/SwipeableDrawer";
+import Button from "@mui/material/Button";
+import CloseIcon from "@mui/icons-material/Close";
 
-const Header = ({ menu_list }) => {
-  const [menuAbieto, setMenuAbierto] = useState(false);
-  const { width } = useScreenSize();
+const Header = ({ menu_list, sticky, stickyRef }) => {
+  const [state, setState] = React.useState({ right: false });
+  const toggleDrawer = (anchor, open) => () => {
+    setState({ ...state, [anchor]: open });
+  };
   return (
-    <header className={styles.header}>
+    <header className={styles.header} id="to_top">
       <nav className={styles.contenedorLogo}>
         <figure>
           <a
-            href="https://quickgold.es/"
+            href="https://quickgold.es"
             title="Logo Quickgold"
-            target="_blank"
             rel="noopener noreferrer"
           >
             <img
-              src="https://quickgold.es/logo.png"
+              src="/logo.png"
               alt="Quickgold Logo"
               className={styles.logo}
               width={163}
@@ -32,7 +34,30 @@ const Header = ({ menu_list }) => {
           </a>
         </figure>
         <div className={styles.menuHamburquesa}>
-          <MenuIcon onClick={() => setMenuAbierto(true)} />
+          {["right"].map((anchor) => (
+            <React.Fragment key={anchor}>
+              <Button
+                aria-label="Menu Hamburguesa"
+                onClick={toggleDrawer(anchor, true)}
+              >
+                <MenuIcon />
+              </Button>
+              <SwipeableDrawer
+                className={styles.contenidoMenuMobil}
+                anchor={anchor}
+                open={state[anchor]}
+                onClose={toggleDrawer(anchor, false)}
+                onOpen={toggleDrawer(anchor, true)}
+              >
+                {" "}
+                <div className={styles.closeBoton}>
+                  {" "}
+                  <CloseIcon onClick={toggleDrawer(anchor, false)} />
+                </div>
+                <MenuMobil menu_list={menu_list} setState={setState} />
+              </SwipeableDrawer>
+            </React.Fragment>
+          ))}
         </div>
         <div className={styles.contenedorRedes}>
           <div className={styles.contenedorIconos}>
@@ -43,9 +68,11 @@ const Header = ({ menu_list }) => {
               title="Linkedin"
             >
               <img
-                src="https://quickgold.es/Vector12.png"
+                src="/Vector12.png"
                 alt="Quickgold Logo"
                 className={styles.vector}
+                width={12}
+                height={12}
               />
               <LinkedInIcon />
             </a>
@@ -71,12 +98,11 @@ const Header = ({ menu_list }) => {
           </div>
         </div>
       </nav>
-      <MenuMobil
+      <MenuOrdenador
         menu_list={menu_list}
-        menuAbieto={menuAbieto}
-        setMenuAbierto={setMenuAbierto}
+        sticky={sticky}
+        stickyRef={stickyRef}
       />
-      <MenuOrdenador menu_list={menu_list} />
     </header>
   );
 };

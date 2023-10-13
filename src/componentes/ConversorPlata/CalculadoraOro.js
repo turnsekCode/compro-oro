@@ -310,7 +310,7 @@ const CalculadoraOro = ({ ciudad, ListadoCiudades }) => {
         <p className={styles.tituloInferior}>TE DAMOS POR TU ORO</p>
         <p className={styles.precioFinal}>
           {selectKilates3
-            ? valorInput > parseFloat(paraMasOro)
+            ? valorInput >= parseFloat(paraMasOro)
               ? (valorInput * valorSelectSuma).toLocaleString("es", {
                   style: "currency",
                   currency: "EUR",

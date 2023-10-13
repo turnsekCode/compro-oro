@@ -13,7 +13,7 @@ const Footer = () => {
       <div className={styles.contenedorContenidoFooter}>
         <figure>
           <a
-            href="https://quickgold.es/"
+            href="https://quickgold.es"
             title="texto"
             rel="noopener noreferrer"
           >
@@ -29,12 +29,12 @@ const Footer = () => {
         </figure>
         <div className={styles.contenedorEnlaces}>
           <div className={styles.enlaces}>
-            <h4>servicios</h4>
+            <h3>servicios</h3>
             <ul>
               <li>
                 <a
                   title="Ir a compro oro"
-                  href="https://quickgold.es/compro-oro/"
+                  href="https://quickgold.es/compro-oro"
                 >
                   Compra de oro
                 </a>
@@ -42,7 +42,7 @@ const Footer = () => {
               <li>
                 <a
                   title="Ir a compra divisa"
-                  href="https://quickgold.es/cambio-divisas/"
+                  href="https://quickgold.es/cambio-divisas"
                 >
                   Compra de divisas
                 </a>
@@ -50,7 +50,7 @@ const Footer = () => {
               <li>
                 <a
                   title="Ir a compra plata"
-                  href="https://quickgold.es/compro-plata/"
+                  href="https://quickgold.es/compro-plata"
                 >
                   Compra de plata
                 </a>
@@ -58,7 +58,7 @@ const Footer = () => {
               <li>
                 <a
                   title="Ir a compra diamantes"
-                  href="https://quickgold.es/vender-diamantes/"
+                  href="https://quickgold.es/vender-diamantes"
                 >
                   Compra de diamantes
                 </a>
@@ -66,7 +66,7 @@ const Footer = () => {
               <li>
                 <a
                   title="Ir oro de inversión"
-                  href="https://quickgold.es/invertir-en-oro/"
+                  href="https://quickgold.es/invertir-en-oro"
                 >
                   Oro de inversión
                 </a>
@@ -74,28 +74,28 @@ const Footer = () => {
             </ul>
           </div>
           <div className={styles.enlaces}>
-            <h4>acerca de nosotros</h4>
+            <h3>acerca de nosotros</h3>
             <ul>
               <li>
                 <a
                   title="Ir a conoce quickgold"
-                  href="https://quickgold.es/expansion/"
+                  href="https://quickgold.es/expansion"
                 >
                   Conoce Quickgold
                 </a>
               </li>
-              <li>
+              {/*<li>
                 <a
                   title="Ir a preguntas frecuentes"
-                  href="https://quickgold.es/preguntas-frecuentes/"
+                  href="https://quickgold.es/preguntas-frecuentes"
                 >
                   Preguntas frecuentes
                 </a>
-              </li>
+  </li>*/}
               <li>
                 <a
                   title="Ir a localizador tiendas"
-                  href="https://quickgold.es/tiendas/"
+                  href="https://quickgold.es/tiendas"
                 >
                   Localizador de tiendas
                 </a>
@@ -103,43 +103,43 @@ const Footer = () => {
               <li>
                 <a
                   title="Ir a mapa del sitio"
-                  href="https://quickgold.es/tiendas/"
+                  href="https://quickgold.es/tiendas"
                 >
                   Mapa del sitio
                 </a>
               </li>
-              <li>
-                <a title="Ir a contacto" href="https://quickgold.es/contacto/">
+              {/*<li>
+                <a title="Ir a contacto" href="https://quickgold.es/contacto">
                   Contacto
                 </a>
-              </li>
-              <li>
-                <a title="Ir a blog" href="https://quickgold.es/blog/">
+</li>*/}
+              {/*<li>
+                <a title="Ir a blog" href="https://quickgold.es/blog">
                   Blog
                 </a>
-              </li>
+  </li>*/}
             </ul>
           </div>
           <div className={styles.enlaces}>
-            <h4>únete a quickgold</h4>
+            <h3>únete a quickgold</h3>
             <ul>
               <li>
                 <a
                   title="Ir a abrir tienda quickgold"
-                  href="https://quickgold.es/expansion/"
+                  href="https://quickgold.es/expansion"
                 >
                   Abrir un tienda Quickgold
                 </a>
               </li>
-              <li>
+              {/*<li>
                 <a title="texto" href="/">
                   Dossier Franquicia
                 </a>
-              </li>
+</li>*/}
               <li>
                 <a
                   title="Ir a trabaja con nosotros"
-                  href="https://quickgold.es/trabaja-con-nosotros/"
+                  href="https://quickgold.es/trabaja-con-nosotros"
                 >
                   Trabaja con nosotros
                 </a>

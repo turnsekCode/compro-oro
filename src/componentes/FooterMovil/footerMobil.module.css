@@ -1,6 +1,6 @@
 .footer {
     background: #213E58;
-    padding: 0 20px 90px 20px;
+    padding: 20px 20px 90px 20px;
 }
 
 .logo {
@@ -9,7 +9,7 @@
 
 .telefono {
     font-weight: 300;
-    font-size: 24px;
+    font-size: 26px;
     line-height: 23px;
     color: #FFFFFF;
 }
@@ -23,7 +23,7 @@
 .redes a svg {
     color: #0692D0;
     border-radius: 4px;
-    font-size: 25px;
+    font-size: 35px;
 }
 
 .contenedorRedes {
@@ -34,7 +34,7 @@
 
 .contenedorRedes p {
     font-weight: 400;
-    font-size: 13px;
+    font-size: 14px;
     line-height: 12px;
     color: #FFFFFF;
 }

@@ -1,114 +1,13 @@
 .contenedorFooter{
-    background: #0F2D45;
-    height: 455px;
-}
-.contenedorContenidoFooter{
-    max-width: 1060px;
-    margin: 0 auto;
-}
-.contenedorContenidoFooter figure{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 40px 0;
-}
-.contenedorEnlaces{
     display: none;
 }
-.enlaces{
-    width: 35%;
-}
-.enlaces h4{
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 18px;
-    color: #FFFFFF;
-    text-transform: uppercase;
-    margin-bottom: 15px;
-}
-.enlaces ul a{
-    font-weight: 400;
-    font-size: 13px;
-    line-height: 18px;
-    color: #0692D0;
-}
-.enlaces ul a:hover, .enlaces a:hover {
-   text-decoration: underline;
-}
-.enlaces p{
-    font-weight: 100;
-    font-size: 14px;
-    line-height: 13px;
-    color: #FFFFFF;
-    margin-bottom: 15px;
-}
-.enlaces a {
-    font-weight: 100;
-    font-size: 25px;
-    line-height: 13px;
-    color: #FFFFFF;
-}
-.iconosRedes{
-    margin-top: 15px;
-    display: flex;
-    align-items: center;
-    gap: 10px;
- 
-}
-.iconosRedes svg{
-    color: #0692D0;
-    border-radius: 4px;
-  
-}
-.twitter svg{
-    background: #0692D0;
-    border-radius: 4px;
-    color: #213E58;
-    Width: 18px;
-    Height: 18px;
-}
-.politicaPrivacidad{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 35px 0;
-    gap: 30px;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 10px;
-    text-align: center;
-    color: #0692D0;
-}
-.politicaPrivacidad p:hover {
-    text-decoration: underline;
-}
-.politicaPrivacidad p{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 3px;
-}
-.politicaPrivacidad svg {
-   font-size: 15px;
-}
-.linea{
-    background: #FFFFFF;
-    opacity: 0.1;
-}
-.registro{
-    margin: 30px 0;
-    font-weight: 400;
-    font-size: 10px;
-    line-height: 14px;
-    text-align: center;
-    color: #FFFFFF;
-    padding: 0 20px;
-}
 
-@media (min-width: 1191px) {
+
+@media (min-width: 610px) {
     .contenedorFooter {
         background: #0F2D45;
         height: 455px;
+        display: block;
     }
 
     .contenedorContenidoFooter {
@@ -131,7 +30,7 @@
         width: 35%;
     }
 
-    .enlaces h4 {
+    .enlaces h3 {
         font-weight: 400;
         font-size: 18px;
         line-height: 18px;

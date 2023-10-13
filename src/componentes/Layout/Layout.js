@@ -1,20 +1,20 @@
 import styles from "./layout.module.css";
-import Header from "../../componentes/Cabecera/Header";
+import Header from "../Cabecera/Header";
 import Footer from "../Footer/Footer";
-import BotonLamarFijo from "../BotonLlamarFijo/BotonLamarFijo";
-import useScreenSize from "@/utilities/useScreenSize";
 import FooterMobil from "../FooterMovil/FooterMobil";
+import useSticky from "../../utilities/useSticky";
+import ScrollToTop from "react-scroll-to-top";
 
-export default function Layout({ children, menu_list }) {
-  const { width } = useScreenSize();
-
+export default function Layout({ children, menu_list, ciudad }) {
+  const { sticky, stickyRef } = useSticky();
   return (
-    <main className={styles.contenedor} menu_list={menu_list}>
-      <Header menu_list={menu_list} />
-      {children}
-      <FooterMobil />
-      <Footer />
-      <BotonLamarFijo />
-    </main>
+    <>
+      <main className={styles.contenedor}>
+        <Header menu_list={menu_list} sticky={sticky} stickyRef={stickyRef} />
+        {children}
+        <FooterMobil /> <Footer />
+        <ScrollToTop smooth />
+      </main>
+    </>
   );
 }

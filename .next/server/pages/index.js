@@ -1498,7 +1498,7 @@ const Section_dos = ({ ciudad  })=>{
                                 })
                             }),
                             /*#__PURE__*/ jsx_runtime_.jsx("p", {
-                                children: "M\xe1s de 50 tiendas para realizar tu venta de oro."
+                                children: "M\xe1s de 60 tiendas para realizar tu venta de oro."
                             })
                         ]
                     }),

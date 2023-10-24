@@ -44,7 +44,7 @@ const Section_dos = ({ ciudad }) => {
             />
           </div>
 
-          <p>Más de 50 tiendas para realizar tu venta de oro.</p>
+          <p>Más de 60 tiendas para realizar tu venta de oro.</p>
         </div>
         <div className={styles.contenedorVentajas}>
           <div className={styles.imagenventaja1}>

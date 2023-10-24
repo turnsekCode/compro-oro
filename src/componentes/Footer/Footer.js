@@ -148,7 +148,7 @@ const Footer = () => {
           </div>
           <div className={styles.enlaces}>
             <p>Llama gratis al</p>
-            <a title="Teléfono" href="te:900 373 629">
+            <a title="Teléfono" href="te:900373629">
               900 373 629
             </a>
             <div className={styles.iconosRedes}>

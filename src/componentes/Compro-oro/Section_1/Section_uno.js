@@ -38,7 +38,7 @@ const Section_uno = ({ ciudad }) => {
             href={`tel:${ciudad?.acf?.telefono}`}
             title="Teléfono"
           >
-            llama gratis al {ciudad?.acf?.telefono}
+            llama gratis
           </a>
         </div>
       </div>

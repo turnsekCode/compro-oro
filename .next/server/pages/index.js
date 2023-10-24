@@ -756,9 +756,9 @@ const Header = ({ menu_list , sticky , stickyRef  })=>{
                             /*#__PURE__*/ jsx_runtime_.jsx("div", {
                                 className: (header_module_default()).botonLlamar,
                                 children: /*#__PURE__*/ jsx_runtime_.jsx("a", {
-                                    href: "tel:900 373 629",
+                                    href: "tel:900373629",
                                     title: "Tel\xe9fono",
-                                    children: "LLAMA GRATIS AL 900 373 629"
+                                    children: "LLAMA GRATIS"
                                 })
                             })
                         ]
@@ -935,7 +935,7 @@ const Footer = ()=>{
                                 }),
                                 /*#__PURE__*/ jsx_runtime_.jsx("a", {
                                     title: "Tel\xe9fono",
-                                    href: "te:900 373 629",
+                                    href: "te:900373629",
                                     children: "900 373 629"
                                 }),
                                 /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
@@ -1053,7 +1053,7 @@ const FooterMobil = ()=>{
                 children: [
                     /*#__PURE__*/ jsx_runtime_.jsx("a", {
                         className: (footerMobil_module_default()).telefono,
-                        href: "tel:900 373 629",
+                        href: "tel:900373629",
                         children: "900 373 629"
                     }),
                     /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
@@ -1396,14 +1396,11 @@ const Section_uno = ({ ciudad  })=>{
                                     children: "CONOCE EL PRECIO DEL ORO"
                                 })
                             }),
-                            /*#__PURE__*/ (0,jsx_runtime_.jsxs)("a", {
+                            /*#__PURE__*/ jsx_runtime_.jsx("a", {
                                 className: (section_uno_module_default()).botonLlamar,
                                 href: `tel:${ciudad?.acf?.telefono}`,
                                 title: "Tel\xe9fono",
-                                children: [
-                                    "llama gratis al ",
-                                    ciudad?.acf?.telefono
-                                ]
+                                children: "llama gratis"
                             })
                         ]
                     })
@@ -2004,13 +2001,10 @@ const CalculadoraOro = ({ ciudad , ListadoCiudades  })=>{
                             children: "Promoci\xf3n Online"
                         })
                     }),
-                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)("a", {
+                    /*#__PURE__*/ jsx_runtime_.jsx("a", {
                         className: (conversor_module_default()).botonLlamarTienda,
                         href: `tel:${ciudad?.acf?.telefono}`,
-                        children: [
-                            "LLAMA GRATIS AL ",
-                            ciudad?.acf?.telefono
-                        ]
+                        children: "LLAMA GRATIS"
                     })
                 ]
             })

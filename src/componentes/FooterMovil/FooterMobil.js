@@ -30,7 +30,7 @@ const FooterMobil = () => {
         </a>
       </figure>
       <div className={styles.contenedorRedes}>
-        <a className={styles.telefono} href="tel:900 373 629">
+        <a className={styles.telefono} href="tel:900373629">
           900 373 629
         </a>
         <div className={styles.redes}>
